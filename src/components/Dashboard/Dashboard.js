@@ -44,6 +44,7 @@ class Dashboard extends Component {
         transaction: [...prevState.transaction, newDeposit],
         balance: prevState.balance + Number(inputValue),
         deposit: prevState.deposit + Number(inputValue),
+        inputValue: '',
       }));
     }
   };
@@ -66,6 +67,7 @@ class Dashboard extends Component {
         transaction: [...prevState.transaction, newWithdraw],
         balance: prevState.balance - Number(inputValue),
         withdraw: prevState.withdraw + Number(inputValue),
+        inputValue: '',
       }));
     }
   };
